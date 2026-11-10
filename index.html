@@ -84,13 +84,19 @@
     </header>
 
     <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu-overlay" id="mobile-overlay"></div>
     <div class="mobile-menu" id="mobile-menu">
-        <a href="#home" class="brand-logo-link" style="margin-bottom: 2rem;" title="رؤية للتسويق الإلكتروني">
-            <img src="assets/images/logo.png" alt="شعار رؤية" class="brand-logo-img">
-        </a>
+        <div class="mobile-menu-header">
+            <a href="#home" class="brand-logo-link" title="رؤية للتسويق الإلكتروني">
+                <img src="assets/images/logo.png" alt="شعار رؤية" class="brand-logo-img">
+            </a>
+            <button class="mobile-close-btn" id="mobile-close" aria-label="إغلاق القائمة">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
 
         <!-- Mobile Language Switcher -->
-        <button class="lang-switch-btn" style="width: 100%; justify-content: center; margin-bottom: 1.2rem;">
+        <button class="lang-switch-btn" style="width: 100%; justify-content: center; margin: 0.5rem 0 1rem 0;">
             <i class="fas fa-globe"></i>
             <span class="lang-text" data-i18n="lang.toggle">English</span>
         </button>

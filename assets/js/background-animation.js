@@ -111,15 +111,19 @@
 
     function initParticles() {
         particles = [];
-        // Particle density based on screen area
-        const count = Math.min(120, Math.floor((width * height) / 11000));
+        const isMobile = window.innerWidth < 768;
+        // Calibrate density for optimal 60fps rendering on both mobile, tablet, and desktop
+        const divisor = isMobile ? 16000 : 11000;
+        const maxCount = isMobile ? 50 : 120;
+        const count = Math.min(maxCount, Math.max(25, Math.floor((width * height) / divisor)));
         for (let i = 0; i < count; i++) {
             particles.push(new Particle());
         }
     }
 
     function drawConnections() {
-        const maxDist = 135;
+        const isMobile = window.innerWidth < 768;
+        const maxDist = isMobile ? 95 : 135;
         const count = particles.length;
 
         for (let i = 0; i < count; i++) {
@@ -212,17 +216,34 @@
         if (cursorGlow) cursorGlow.style.opacity = '0';
     });
 
-    // Touch support for mobile devices
+    // Touch support for mobile phones and tablets
+    window.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 0) {
+            mouse.targetX = e.touches[0].clientX;
+            mouse.targetY = e.touches[0].clientY;
+            mouse.isMoving = true;
+            if (cursorGlow) {
+                cursorGlow.style.transform = `translate3d(${mouse.targetX}px, ${mouse.targetY}px, 0)`;
+                cursorGlow.style.opacity = '0.8';
+            }
+        }
+    }, { passive: true });
+
     window.addEventListener('touchmove', (e) => {
         if (e.touches.length > 0) {
             mouse.targetX = e.touches[0].clientX;
             mouse.targetY = e.touches[0].clientY;
+            if (cursorGlow) {
+                cursorGlow.style.transform = `translate3d(${mouse.targetX}px, ${mouse.targetY}px, 0)`;
+                cursorGlow.style.opacity = '0.8';
+            }
         }
     }, { passive: true });
 
     window.addEventListener('touchend', () => {
         mouse.targetX = null;
         mouse.targetY = null;
+        if (cursorGlow) cursorGlow.style.opacity = '0';
     });
 
     window.addEventListener('resize', resize);

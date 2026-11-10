@@ -88,21 +88,53 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mobile Menu Toggle
+    // Mobile Menu Toggle & Overlay
+    const mobileClose = document.getElementById('mobile-close');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+
+    function closeMobileDrawer() {
+        if (!mobileMenu) return;
+        mobileMenu.classList.remove('open');
+        if (mobileToggle) mobileToggle.classList.remove('active');
+        if (mobileOverlay) mobileOverlay.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+
+    function openMobileDrawer() {
+        if (!mobileMenu) return;
+        mobileMenu.classList.add('open');
+        if (mobileToggle) mobileToggle.classList.add('active');
+        if (mobileOverlay) mobileOverlay.classList.add('active');
+        document.body.classList.add('no-scroll');
+    }
+
     if (mobileToggle && mobileMenu) {
         mobileToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
-            mobileToggle.classList.toggle('active');
-            document.body.classList.toggle('no-scroll');
+            if (mobileMenu.classList.contains('open')) {
+                closeMobileDrawer();
+            } else {
+                openMobileDrawer();
+            }
         });
+
+        if (mobileClose) {
+            mobileClose.addEventListener('click', closeMobileDrawer);
+        }
+
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', closeMobileDrawer);
+        }
 
         // Close menu on link click
         mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('open');
-                mobileToggle.classList.remove('active');
-                document.body.classList.remove('no-scroll');
-            });
+            link.addEventListener('click', closeMobileDrawer);
+        });
+
+        // Close menu on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                closeMobileDrawer();
+            }
         });
     }
 
