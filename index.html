@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رؤية | Ruya - شركة التسويق الرقمي ونمو الأعمال</title>
+    <meta name="description" content="شركة رؤية (Ruya) للتسويق الإلكتروني - نبتكر استراتيجيات تسويقية رقمية وحملات إعلانية ممولة تضاعف مبيعاتك وتصنع لعلامتك التجارية مكانة رائدة.">
+    <meta name="keywords" content="تسويق الكتروني, اعلانات ممولة, سوشيال ميديا, تصميم مواقع, متجر الكتروني, سيو, هوية بصرية, رؤية, Ruya Marketing">
+
+    <!-- Official Favicon from New Logo Emblem -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Interactive Mouse Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+    <div id="cursor-glow"></div>
+    <div class="ambient-gradient-1"></div>
+    <div class="ambient-gradient-2"></div>
+    <div class="ambient-gradient-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo-link" title="شركة رؤية (Ruya) للتسويق الإلكتروني">
+                <img src="assets/images/logo.png" alt="شعار شركة رؤية للتسويق الإلكتروني" class="brand-logo-img">
+            </a>
+
+            <!-- Nav Links Desktop -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">من نحن</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav.services">خدماتنا</a></li>
+                    <li><a href="#pricing" class="nav-link" data-i18n="nav.pricing">باقاتنا</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">أعمالنا</a></li>
+                    <li><a href="#testimonials" class="nav-link" data-i18n="nav.testimonials">شركاء النجاح</a></li>
+                    <li><a href="#faq" class="nav-link" data-i18n="nav.faq">الأسئلة الشائعة</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <!-- Nav Actions & Socials -->
+            <div class="nav-actions">
+                <!-- Language Switcher Button -->
+                <button class="lang-switch-btn" id="lang-switch-desktop" title="تغيير اللغة / Switch Language">
+                    <i class="fas fa-globe"></i>
+                    <span class="lang-text" data-i18n="lang.toggle">English</span>
+                </button>
+
+                <div class="nav-social-icons">
+                    <a href="https://www.facebook.com/share/1HetpkcfHi/" target="_blank" rel="noopener noreferrer" class="social-icon-btn fb" title="فيسبوك">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ruya_r7777?cplk=MW1wZHk4aWI4Z242cw==" target="_blank" rel="noopener noreferrer" class="social-icon-btn ig" title="انستجرام">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ruya_9537?_r=1&_t=ZS-9BGEUTGg6dQ" target="_blank" rel="noopener noreferrer" class="social-icon-btn tt" title="تيك توك">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="mailto:ruya76199@gmail.com" class="social-icon-btn email" title="البريد الإلكتروني">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <a href="https://wa.me/201558054551?text=مرحباً%20شركة%20رؤية%20للتسويق%20الرقمي،%20أريد%20استشارة%20تسويقية%20لمشروعي" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-i18n="nav.whatsapp">تواصل واتساب</span>
+                </a>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="قائمة التصفح">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="brand-logo-link" style="margin-bottom: 2rem;" title="رؤية للتسويق الإلكتروني">
+            <img src="assets/images/logo.png" alt="شعار رؤية" class="brand-logo-img">
+        </a>
+
+        <!-- Mobile Language Switcher -->
+        <button class="lang-switch-btn" style="width: 100%; justify-content: center; margin-bottom: 1.2rem;">
+            <i class="fas fa-globe"></i>
+            <span class="lang-text" data-i18n="lang.toggle">English</span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link" data-i18n="nav.home">الرئيسية</a></li>
+            <li><a href="#about" class="nav-link" data-i18n="nav.about">من نحن</a></li>
+            <li><a href="#services" class="nav-link" data-i18n="nav.services">خدماتنا</a></li>
+            <li><a href="#pricing" class="nav-link" data-i18n="nav.pricing">باقاتنا</a></li>
+            <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">أعمالنا</a></li>
+            <li><a href="#testimonials" class="nav-link" data-i18n="nav.testimonials">شركاء النجاح</a></li>
+            <li><a href="#faq" class="nav-link" data-i18n="nav.faq">الأسئلة الشائعة</a></li>
+            <li><a href="#contact" class="nav-link" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 1rem;">
+            <a href="https://wa.me/201558054551" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                <i class="fab fa-whatsapp"></i>
+                <span>واتساب: 201558054551+</span>
+            </a>
+            <div class="nav-social-icons" style="justify-content: center;">
+                <a href="https://www.facebook.com/share/1HetpkcfHi/" target="_blank" class="social-icon-btn fb"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ruya_r7777?cplk=MW1wZHk4aWI4Z242cw==" target="_blank" class="social-icon-btn ig"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@ruya_9537?_r=1&_t=ZS-9BGEUTGg6dQ" target="_blank" class="social-icon-btn tt"><i class="fab fa-tiktok"></i></a>
+                <a href="mailto:ruya76199@gmail.com" class="social-icon-btn email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-grid">
+                <!-- Text Content -->
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="pulse-dot"></span>
+                        <span data-i18n="hero.tag">وكالة التسويق الرقمي الأكثر ابتكاراً</span>
+                    </div>
+                    <h1 class="hero-title" data-i18n="hero.title">
+                        نحوّل <span class="gradient-text">رؤيتك</span> إلى نتائج تسويقية <span class="highlight-yellow">مبهرة وأرباح مضاعفة</span>
+                    </h1>
+                    <p class="hero-description" data-i18n="hero.desc">
+                        في <strong>رؤية (Ruya)</strong> نجمع بين الإبداع البصري والتحليل البياني الذكي لإدارة حملاتك الإعلانية، صناعة المحتوى الاستثنائي، وتطوير حضورك الرقمي ليحقق أعلى عوائد ممكنة على الاستثمار.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-i18n="hero.cta_plan">احصل على خطة تسويقية مجانية</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <a href="https://wa.me/201558054551?text=مرحباً%20شركة%20رؤية،%20أود%20الاستفسار%20عن%20باقاتكم%20التسويقية" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-i18n="hero.cta_chat">تحدث معنا مباشرة</span>
+                        </a>
+                    </div>
+                    <div class="hero-features-list">
+                        <div class="feature-pill">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="hero.feat_data">استراتيجيات مدروسة بالبيانات</span>
+                        </div>
+                        <div class="feature-pill">
+                            <i class="fas fa-bolt"></i>
+                            <span data-i18n="hero.feat_roas">عائد استثمار إعلاني مضاعف (ROAS)</span>
+                        </div>
+                        <div class="feature-pill">
+                            <i class="fas fa-headset"></i>
+                            <span data-i18n="hero.feat_support">دعم وتحليل أسبوعي مستمر</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Interactive Brand Card -->
+                <div class="hero-visual-wrapper">
+                    <div class="hero-glow-back"></div>
+                    <div class="hero-main-card tilt-card">
+                        <img src="assets/images/logo.png" alt="شعار Ruya" class="hero-card-logo">
+                        <h3 class="hero-card-title" data-i18n="hero.card_title">Ruya Marketing Agency</h3>
+                        <p class="hero-card-subtitle" data-i18n="hero.card_sub">شريكك الاستراتيجي للنمو الرقمي</p>
+                        
+                        <div class="hero-card-metrics">
+                            <div class="metric-box">
+                                <span class="metric-value">+380%</span>
+                                <span class="metric-label" data-i18n="hero.metric_sales">متوسط نمو المبيعات</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-value">5.2X</span>
+                                <span class="metric-label" data-i18n="hero.metric_roas">معدل العائد الإعلاني ROAS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badges -->
+                    <div class="floating-badge badge-top">
+                        <div class="badge-icon blue">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="badge-info">
+                            <h5 data-i18n="hero.badge_top_h">حملات إعلانية دقيقة</h5>
+                            <p data-i18n="hero.badge_top_p">Meta &amp; Google &amp; TikTok Ads</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-bottom">
+                        <div class="badge-icon pink">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="badge-info">
+                            <h5 data-i18n="hero.badge_btm_h">هوية بصرية استثنائية</h5>
+                            <p data-i18n="hero.badge_btm_p">تصميم علامات تجارية رائدة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-glass-bar">
+                    <div class="stat-item">
+                        <div class="counter-wrapper">
+                            <span class="counter-number" data-target="500">0</span>
+                            <span class="counter-suffix">+</span>
+                        </div>
+                        <div class="stat-label" data-i18n="stats.campaigns">حملة إعلانية ناجحة تم إدارتها</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="counter-wrapper">
+                            <span class="counter-number" data-target="150">0</span>
+                            <span class="counter-suffix">%</span>
+                        </div>
+                        <div class="stat-label" data-i18n="stats.revenue">متوسط نمو الإيرادات للعملاء</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="counter-wrapper">
+                            <span class="counter-number" data-target="98">0</span>
+                            <span class="counter-suffix">%</span>
+                        </div>
+                        <div class="stat-label" data-i18n="stats.satisfaction">نسبة رضا وثقة شركائنا</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="counter-wrapper">
+                            <span class="counter-number" data-target="12">0</span>
+                            <span class="counter-suffix">M+</span>
+                        </div>
+                        <div class="stat-label" data-i18n="stats.reach">وصول وتفاعل شهري مستهدف</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container about-grid">
+                <!-- Visual Box -->
+                <div class="about-visual-box tilt-card">
+                    <div class="about-pillars">
+                        <div class="pillar-card">
+                            <div class="pillar-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="pillar-content">
+                                <h4 data-i18n="about.p_target_h">الاستهداف فائق الدقة</h4>
+                                <p data-i18n="about.p_target_d">نصل مباشرة للجمهور المستعد للشراء، متجنبين إهدار ميزانيتك الإعلانية.</p>
+                            </div>
+                        </div>
+
+                        <div class="pillar-card">
+                            <div class="pillar-icon" style="background: linear-gradient(135deg, var(--ruya-pink), var(--ruya-yellow));">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="pillar-content">
+                                <h4 data-i18n="about.p_creative_h">الإبداع البصري الجاذب</h4>
+                                <p data-i18n="about.p_creative_d">تصاميم إبداعية وفيديوهات إعلانية مبتكرة تخطف الانتباه في الثواني الأولى.</p>
+                            </div>
+                        </div>
+
+                        <div class="pillar-card">
+                            <div class="pillar-icon" style="background: linear-gradient(135deg, var(--ruya-yellow), var(--ruya-blue));">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="pillar-content">
+                                <h4 data-i18n="about.p_kpi_h">تحسين مستمر للأداء</h4>
+                                <p data-i18n="about.p_kpi_d">متابعة لحظية ومؤشرات قياس واضحة (KPIs) تضمن صعود مبيعاتك بشكل متواصل.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="about-text">
+                    <span class="badge-tag"><i class="fas fa-award"></i> <span data-i18n="about.tag">عن وكالة رؤية</span></span>
+                    <h3 data-i18n="about.title">نحن لا نطلق إعلانات فقط.. بل نبني <span class="gradient-text">قصص نجاح مستدامة</span></h3>
+                    <p data-i18n="about.p1">
+                        شركة <strong>رؤية (Ruya)</strong> تأسست لتكون الشريك الاستراتيجي لكل صاحب عمل يطمح لاقتناص حصة سوقية أكبر والوصول لعملائه الحقيقيين. نمتلك الخبرة والحلول المتكاملة لتغطية كافة متطلبات التسويق الرقمي من التخطيط والتحليل وحتى التنفيذ وتحقيق النتائج.
+                    </p>
+                    <p data-i18n="about.p2">
+                        شعارنا يجسد الانسجام بين قوة التخطيط التحليلي (الأزرق)، الحيوية الإبداعية المتجددة (الوردي)، وبريق النجاح والريادة الاستثنائية (الذهبي).
+                    </p>
+
+                    <div class="about-checks">
+                        <div class="check-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about.check1">إدارة متقدمة لجميع منصات الإعلانات</span>
+                        </div>
+                        <div class="check-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about.check2">تقارير شهرية شفافة ومفصلة</span>
+                        </div>
+                        <div class="check-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about.check3">فريق متخصص لكل تخصص تسويقي</span>
+                        </div>
+                        <div class="check-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="about.check4">حلول مخصصة للشركات والمتاجر</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-pink">
+                        <span data-i18n="about.cta">ابدأ خطة نموك الآن مع رؤية</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="badge-tag"><i class="fas fa-cube"></i> <span data-i18n="services.tag">خدماتنا المتكاملة</span></span>
+                    <h2 class="section-title" data-i18n="services.title">حلول تسويقية تغطي كل مرحلة في <span class="gradient-text">رحلة نمو مشروعك</span></h2>
+                    <p class="section-subtitle" data-i18n="services.sub">
+                        نقدم باقة من الخدمات الرقمية المصممة بعناية لمضاعفة تفاعل العملاء، زيادة المبيعات، وبناء حضور رقمي لا يمكن تجاهله.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card tilt-card">
+                        <div>
+                            <div class="service-icon-box icon-blue">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3 class="service-title" data-i18n="services.s1_title">الحملات الإعلانية الممولة (Paid Ads)</h3>
+                            <p class="service-desc" data-i18n="services.s1_desc">
+                                تخطيط وإدارة الحملات الإعلانية على Meta (فيسبوك &amp; انستجرام)، إعلانات تيك توك، جوجل، وسناب شات مع استهداف فائق الدقة لخفض تكلفة العميل (CPA) ورفع العائد (ROAS).
+                            </p>
+                        </div>
+                        <div class="service-tags">
+                            <span class="service-tag">Meta Ads</span>
+                            <span class="service-tag">Google Ads</span>
+                            <span class="service-tag">TikTok Ads</span>
+                            <span class="service-tag">Retargeting</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card tilt-card">
+                        <div>
+                            <div class="service-icon-box icon-pink">
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                            <h3 class="service-title" data-i18n="services.s2_title">إدارة السوشيال ميديا وصناعة المحتوى</h3>
+                            <p class="service-desc" data-i18n="services.s2_desc">
+                                بناء خطط محتوى شهرية جذابة، كتابة نصوص بيعية مقنعة (Copywriting)، وتصاميم متميزة تعكس هوية علامتك التجارية وتخلق مجتمعاً متفاعلاً من العملاء الأوفياء.
+                            </p>
+                        </div>
+                        <div class="service-tags">
+                            <span class="service-tag">Content Strategy</span>
+                            <span class="service-tag">Copywriting</span>
+                            <span class="service-tag">Reels Production</span>
+                            <span class="service-tag">Community Management</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card tilt-card">
+                        <div>
+                            <div class="service-icon-box icon-yellow">
+                                <i class="fas fa-search-dollar"></i>
+                            </div>
+                            <h3 class="service-title" data-i18n="services.s3_title">تحسين محركات البحث (SEO)</h3>
+                            <p class="service-desc" data-i18n="services.s3_desc">
+                                تهيئة موقعك وتصدر النتائج الأولى في محرك البحث جوجل، لجلب زيارات مجانية مستمرة وتحويل الزوار العضويين إلى عملاء مستمرين يبحثون بالفعل عن خدماتك.
+                            </p>
+                        </div>
+                        <div class="service-tags">
+                            <span class="service-tag">Keywords Optimization</span>
+                            <span class="service-tag">Technical SEO</span>
+                            <span class="service-tag">High-Authority Backlinks</span>
+                            <span class="service-tag">Local SEO</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card tilt-card">
+                        <div>
+                            <div class="service-icon-box icon-pink">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="service-title" data-i18n="services.s4_title">تصميم المواقع والمتاجر الإلكترونية</h3>
+                            <p class="service-desc" data-i18n="services.s4_desc">
+                                إنشاء وتطوير مواقع احترافية سريعة ومتوافقة مع الجوال ومتاجر إلكترونية متكاملة بوابات الدفع والشحن وسلال شراء سريعة ترفع معدل التحويل (Conversion Rate).
+                            </p>
+                        </div>
+                        <div class="service-tags">
+                            <span class="service-tag">E-Commerce Stores</span>
+                            <span class="service-tag">Landing Pages</span>
+                            <span class="service-tag">Modern UI/UX</span>
+                            <span class="service-tag">Speed &amp; Security</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card tilt-card">
+                        <div>
+                            <div class="service-icon-box icon-blue">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="service-title" data-i18n="services.s5_title">الهوية البصرية وتصميم البراندينج</h3>
+                            <p class="service-desc" data-i18n="services.s5_desc">
+                                تصميم شعارات احترافية، أنظمة ألوان، مطبوعات، وأدلة هوية بصرية كاملة (Brand Guidelines) تجعل علامتك التجارية فريدة وراسخة في أذهان عملائك ومنافسيك.
+                            </p>
+                        </div>
+                        <div class="service-tags">
+                            <span class="service-tag">Logo Design</span>
+                            <span class="service-tag">Brand Guidelines</span>
+                            <span class="service-tag">Packaging Design</span>
+                            <span class="service-tag">Social Media Kit</span>
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card tilt-card">
+                        <div>
+                            <div class="service-icon-box icon-yellow">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3 class="service-title" data-i18n="services.s6_title">إنتاج الفيديو والموشن جرافيك الإعلاني</h3>
+                            <p class="service-desc" data-i18n="services.s6_desc">
+                                إنتاج فيديوهات ترويجية سينمائية ورسوم موشن جرافيك 2D/3D تشرح منتجاتك وتبسط خدماتك وتدفع العميل لاتخاذ قرار الشراء المباشر بأسلوب عصري ومبهر.
+                            </p>
+                        </div>
+                        <div class="service-tags">
+                            <span class="service-tag">2D/3D Motion Graphics</span>
+                            <span class="service-tag">Video Commercials</span>
+                            <span class="service-tag">Voiceover</span>
+                            <span class="service-tag">Cinematic Editing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Packages Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="badge-tag"><i class="fas fa-tags"></i> <span data-i18n="pricing.tag">باقات التسويق الرقمي</span></span>
+                    <h2 class="section-title" data-i18n="pricing.title">اختر الباقة المناسبة لحجم <span class="gradient-text">طموحك وميزانيتك</span></h2>
+                    <p class="section-subtitle" data-i18n="pricing.sub">
+                        خطط واضحة ومدروسة تمنحك أفضل قيمة وأقصى عائد مقابل استثمارك.
+                    </p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Basic Plan -->
+                    <div class="pricing-card tilt-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name" data-i18n="pricing.p1_name">باقة الانطلاق (Startup)</h3>
+                            <p class="plan-desc" data-i18n="pricing.p1_desc">مثالية للمشاريع الناشئة والأنشطة المحلية الراغبة في تأسيس حضورها الرقمي.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p1_f1">إدارة منصتين من منصات التواصل الاجتماعي</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p1_f2">12 تصميم احترافي + محتوى شهرياً</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p1_f3">إدارة حملة إعلانية ممولة واحدة</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p1_f4">كتابة نصوص إعلانية موجهة</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p1_f5">تقرير شهري لأداء الحملات والمتابعة</span></li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline" style="width: 100%;">
+                            <span data-i18n="pricing.p1_btn">طلب الباقة</span>
+                        </a>
+                    </div>
+
+                    <!-- Pro Plan (Featured) -->
+                    <div class="pricing-card featured tilt-card">
+                        <div class="featured-ribbon" data-i18n="pricing.p2_ribbon">الأكثر طلباً واختياراً</div>
+                        <div class="plan-header">
+                            <h3 class="plan-name" data-i18n="pricing.p2_name">باقة النمو المتكاملة (Growth)</h3>
+                            <p class="plan-desc" data-i18n="pricing.p2_desc">الحل الأقوى للأنشطة التجارية والمتاجر الساعية لمضاعفة المبيعات والانتشار.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p2_f1">إدارة 4 منصات (Meta, TikTok, Instagram, Google)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p2_f2">24 منشور وتصميم عالي الدقة</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p2_f3">4 فيديوهات ريلز / موشن جرافيك إعلانية</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p2_f4">إدارة حملات إعلانية متقدمة وإعادة استهداف (Retargeting)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p2_f5">تحسين صفحات الهبوط ومعدل التحويل</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p2_f6">تقرير أسبوعي وتحليل تفصيلي ومسؤول حساب مخصص</span></li>
+                        </ul>
+                        <a href="#contact" class="btn btn-pink" style="width: 100%;">
+                            <span data-i18n="pricing.p2_btn">ابدأ بهذه الباقة الآن</span>
+                        </a>
+                    </div>
+
+                    <!-- VIP Plan -->
+                    <div class="pricing-card tilt-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name" data-i18n="pricing.p3_name">باقة النخبة والشركات (VIP Enterprise)</h3>
+                            <p class="plan-desc" data-i18n="pricing.p3_desc">للعلامات التجارية الكبرى التي تحتاج فريق تسويق كامل مخصص لها بالكامل.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p3_f1">إدارة كاملة لجميع المنصات الرقمية دون حدود</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p3_f2">إنتاج محتوى يومي شامل وتصاميم سينمائية</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p3_f3">فيديوهات موشن جرافيك وتصوير إعلاني واقعي</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p3_f4">إدارة إعلانات متعددة القنوات وحملات تحويل مباشر</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p3_f5">خطة سيو SEO وتطوير مستمر للموقع الإلكتروني</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="pricing.p3_f6">دعم واستشارات استراتيجية على مدار الساعة (24/7)</span></li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline" style="width: 100%;">
+                            <span data-i18n="pricing.p3_btn">طلب الباقة المخصصة</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Works Section with Real Service Samples -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="badge-tag"><i class="fas fa-briefcase"></i> <span data-i18n="portfolio.tag">معرض الإنجازات والخدمات</span></span>
+                    <h2 class="section-title" data-i18n="portfolio.title">نماذج حية من الخدمات والنتائج التي <span class="gradient-text">قدمناها لعملائنا</span></h2>
+                    <p class="section-subtitle" data-i18n="portfolio.sub">
+                        شاهد عينات حقيقية من الحملات الإعلانية، الهويات البصرية، المتاجر الإلكترونية، والمحتوى الإبداعي الذي صنعناه لشركاء نجاحنا.
+                    </p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all" data-i18n="portfolio.btn_all">جميع الأعمال</button>
+                    <button class="filter-btn" data-filter="ads" data-i18n="portfolio.btn_ads">إعلانات ممولة</button>
+                    <button class="filter-btn" data-filter="branding" data-i18n="portfolio.btn_branding">هوية بصرية</button>
+                    <button class="filter-btn" data-filter="content" data-i18n="portfolio.btn_content">محتوى وسوشيال ميديا</button>
+                    <button class="filter-btn" data-filter="web" data-i18n="portfolio.btn_web">مواقع ومتاجر</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Project 1: Fashion Ads Sample -->
+                    <div class="portfolio-card" data-category="ads">
+                        <div class="portfolio-thumb">
+                            <img src="assets/images/portfolio/portfolio-1.svg" alt="عينة حملة إعلانات ممولة لمتجر أزياء">
+                            <div class="portfolio-thumb-overlay">
+                                <a href="#contact" class="btn btn-primary btn-sm" data-i18n="portfolio.i1_btn">طلب حملة مماثلة</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category" data-i18n="portfolio.i1_cat">إعلانات ممولة (Meta &amp; TikTok)</span>
+                            <h4 class="portfolio-title" data-i18n="portfolio.i1_title">حملة إطلاق متجر أزياء إلكتروني</h4>
+                            <div class="portfolio-result">
+                                <i class="fas fa-arrow-trend-up"></i>
+                                <span data-i18n="portfolio.i1_res">تحقيق عائد إعلاني 6.4X وبيع أكثر من 1,840 طلب في شهرين</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Restaurant Branding Sample -->
+                    <div class="portfolio-card" data-category="branding">
+                        <div class="portfolio-thumb">
+                            <img src="assets/images/portfolio/portfolio-2.svg" alt="عينة تصميم هوية بصرية لسلسلة مطاعم">
+                            <div class="portfolio-thumb-overlay">
+                                <a href="#contact" class="btn btn-pink btn-sm" data-i18n="portfolio.i2_btn">طلب هوية بصرية</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category" data-i18n="portfolio.i2_cat">بناء هوية بصرية وبراندينج</span>
+                            <h4 class="portfolio-title" data-i18n="portfolio.i2_title">تصميم هوية كاملة لسلسلة مطاعم فاخرة</h4>
+                            <div class="portfolio-result">
+                                <i class="fas fa-check"></i>
+                                <span data-i18n="portfolio.i2_res">شعار، ألوان، أغلفة، ومطبوعات حققت تميزاً استثنائياً في السوق</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Cosmetics E-commerce Sample -->
+                    <div class="portfolio-card" data-category="web">
+                        <div class="portfolio-thumb">
+                            <img src="assets/images/portfolio/portfolio-3.svg" alt="عينة تصميم متجر إلكتروني لمستحضرات التجميل">
+                            <div class="portfolio-thumb-overlay">
+                                <a href="#contact" class="btn btn-primary btn-sm" data-i18n="portfolio.i3_btn">طلب متجر إلكتروني</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category" data-i18n="portfolio.i3_cat">تطوير متاجر إلكترونية</span>
+                            <h4 class="portfolio-title" data-i18n="portfolio.i3_title">متجر إلكتروني متكامل لمنتجات العناية بالبشرة</h4>
+                            <div class="portfolio-result">
+                                <i class="fas fa-bolt"></i>
+                                <span data-i18n="portfolio.i3_res">سرعة تحميل 0.8 ثانية، ونمو بمعدل التحويل بنسبة +42%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Viral TikTok & Reels Sample -->
+                    <div class="portfolio-card" data-category="content">
+                        <div class="portfolio-thumb">
+                            <img src="assets/images/portfolio/portfolio-4.svg" alt="عينة صناعة محتوى وريلز تيك توك فيروسي">
+                            <div class="portfolio-thumb-overlay">
+                                <a href="#contact" class="btn btn-pink btn-sm" data-i18n="portfolio.i4_btn">طلب صناعة محتوى</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category" data-i18n="portfolio.i4_cat">صناعة المحتوى والريلز الفيروسي</span>
+                            <h4 class="portfolio-title" data-i18n="portfolio.i4_title">حملة ريلز تيك توك وسوشيال ميديا لمركز طبي</h4>
+                            <div class="portfolio-result">
+                                <i class="fas fa-eye"></i>
+                                <span data-i18n="portfolio.i4_res">أكثر من 2.5 مليون مشاهدة بدون إعلانات وتضاعف المتابعين</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Real Estate Google Ads Sample -->
+                    <div class="portfolio-card" data-category="ads">
+                        <div class="portfolio-thumb">
+                            <img src="assets/images/portfolio/portfolio-5.svg" alt="عينة قمع إعلانات جوجل لقطاع العقارات">
+                            <div class="portfolio-thumb-overlay">
+                                <a href="#contact" class="btn btn-primary btn-sm" data-i18n="portfolio.i5_btn">طلب إدارة إعلانات</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category" data-i18n="portfolio.i5_cat">إعلانات جوجل وميتا العقارية</span>
+                            <h4 class="portfolio-title" data-i18n="portfolio.i5_title">قمع جذب عملاء مهتمين لشركة استشارات عقارية</h4>
+                            <div class="portfolio-result">
+                                <i class="fas fa-users"></i>
+                                <span data-i18n="portfolio.i5_res">جلب 450 عميل محتمل مؤهل للشراء وخفض تكلفة العميل بنسبة 35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Corporate Rebranding Sample -->
+                    <div class="portfolio-card" data-category="branding">
+                        <div class="portfolio-thumb">
+                            <img src="assets/images/portfolio/portfolio-6.svg" alt="عينة تطوير هوية بصرية لشركة استشارات">
+                            <div class="portfolio-thumb-overlay">
+                                <a href="#contact" class="btn btn-pink btn-sm" data-i18n="portfolio.i6_btn">طلب تصميم إبداعي</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category" data-i18n="portfolio.i6_cat">إعادة إحياء وتطوير العلامات التجارية (Rebranding)</span>
+                            <h4 class="portfolio-title" data-i18n="portfolio.i6_title">تطوير علامة تجارية ودليل تصميم متكامل لشركة استشارات</h4>
+                            <div class="portfolio-result">
+                                <i class="fas fa-star"></i>
+                                <span data-i18n="portfolio.i6_res">زيادة معدل حجز الدورات بنسبة +210% خلال الربع الأول</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="badge-tag"><i class="fas fa-quote-right"></i> <span data-i18n="testi.tag">آراء عملائنا</span></span>
+                    <h2 class="section-title" data-i18n="testi.title">ماذا يقول <span class="gradient-text">شركاء النجاح</span> عن تجربتهم مع رؤية؟</h2>
+                    <p class="section-subtitle" data-i18n="testi.sub">
+                        فخورون بثقة مئات الشركات والمشاريع التي ساهمنا في تنمية أعمالها.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card tilt-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testi.c1_text">
+                            "التعاون مع فريق رؤية كان نقطة تحول حقيقية لمتجرنا. خلال 3 أشهر فقط تضاعفت طلباتنا اليومية 4 مرات، والتقارير الأسبوعية واضحة جداً ودقيقة وتمنحنا ثقة كاملة في كل قرش يتم إنفاقه."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar">م.ع</div>
+                            <div class="client-details">
+                                <h5 data-i18n="testi.c1_name">محمد عبد الرحمن</h5>
+                                <span data-i18n="testi.c1_role">مؤسس متجر إلكتروني للملابس</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card tilt-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testi.c2_text">
+                            "أكثر ما يميز شركة رؤية هو الإبداع في المحتوى وسرعة الاستجابة. إعلانات التيك توك والميتا حققت تفاعلاً غير مسبوق وجلبت لنا عملاء جاهزين للشراء فوراً."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar" style="background: linear-gradient(135deg, var(--ruya-pink), var(--ruya-yellow));">س.ن</div>
+                            <div class="client-details">
+                                <h5 data-i18n="testi.c2_name">سارة النجار</h5>
+                                <span data-i18n="testi.c2_role">مديرة التسويق لمركز تجميل وعيادات</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card tilt-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testi.c3_text">
+                            "الهوية البصرية التي صمموها لنا جعلت علامتنا تبدو كشركة عالمية. فريق محترف، شغوف، ويهتم بأدق التفاصيل. أنصح بالتعامل معهم لكل من يريد الارتقاء بمشروعه."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar" style="background: linear-gradient(135deg, var(--ruya-yellow), var(--ruya-blue));">خ.ح</div>
+                            <div class="client-details">
+                                <h5 data-i18n="testi.c3_name">المهندس خالد حسن</h5>
+                                <span data-i18n="testi.c3_role">الرئيس التنفيذي لشركة مقاولات وديكور</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="badge-tag"><i class="fas fa-circle-question"></i> <span data-i18n="faq.tag">الأسئلة المتكررة</span></span>
+                    <h2 class="section-title" data-i18n="faq.title">كل ما تحتاج معرفته عن <span class="gradient-text">خدمات رؤية</span></h2>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q1">كيف تبدأ خطة العمل بعد التواصل والاتفاق معكم؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a1">
+                                تبدأ رحلتنا بجلسة استكشافية لفهم نشاطك ومنافسيك وتحديد أهدافك بدقة. بعدها يقوم فريقنا بإعداد دراسة تسويقية ووضع خطة عمل مفصلة تتضمن الميزانية المقترحة، المحتوى المطلوب، والجدول الزمني للبدء الفوري.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q2">ما هي الميزانية الإعلانية المناسبة للبدء؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a2">
+                                نحدد الميزانية بناءً على طبيعة السوق المستهدف، نوع المنتج أو الخدمة، وأهدافك البيعية. نساعدك في بدء الحملات بميزانية متوازنة يتم اختبارها ثم زيادتها تدريجياً بالتزامن مع تحقيق النتائج الإيجابية.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q3">هل تقدمون تقارير دورية لمتابعة أداء الحملات؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a3">
+                                نعم بالتأكيد! نحرص على الشفافية التامة؛ نرسل تقارير أسبوعية وشهرية توضح أرقام الوصول، التفاعل، عدد العملاء المحتملين، وتكلفة كل عملية شراء مع توصيات مستمرة للتحسين.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q4">كيف يتم ربط استفساري عند إرسال النموذج بالموقع؟</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a4">
+                                جميع النماذج في موقعنا متصلة مباشرة بالبريد الإلكتروني الرسمي لشركة رؤية ruya76199@gmail.com، كما يمكنك أيضاً التواصل السريع واللحظي عبر رقم الواتساب الرسمي +201558054551.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section & Lead Generation Form -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid">
+                <!-- Info Card -->
+                <div class="contact-info-card">
+                    <span class="badge-tag"><i class="fas fa-comments"></i> <span data-i18n="contact.tag">جاهزون لمساعدتك</span></span>
+                    <h3 data-i18n="contact.title">دعنا نتحدث عن <span class="gradient-text">مستقبل مشروعك الرقمي</span></h3>
+                    <p data-i18n="contact.desc">
+                        تواصل معنا اليوم لحجز جلستك الاستشارية المجانية مع أحد خبراء التسويق لدينا، واكتشف كيف يمكن لشركة رؤية قيادة مشروعك نحو صدارة مجالك.
+                    </p>
+
+                    <div class="contact-channels">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/201558054551?text=مرحباً%20شركة%20رؤية%20للتسويق،%20أريد%20معلومات%20عن%20خدماتكم" target="_blank" rel="noopener noreferrer" class="channel-link">
+                            <div class="channel-icon wa">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="channel-text">
+                                <span data-i18n="contact.wa_label">واتساب مباشر (متاح 24/7):</span>
+                                <strong>+20 155 805 4551</strong>
+                            </div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:ruya76199@gmail.com" class="channel-link">
+                            <div class="channel-icon mail">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="channel-text">
+                                <span data-i18n="contact.mail_label">البريد الإلكتروني المباشر:</span>
+                                <strong>ruya76199@gmail.com</strong>
+                            </div>
+                        </a>
+
+                        <!-- Social Community -->
+                        <div class="channel-link" style="cursor: default;">
+                            <div class="channel-icon loc">
+                                <i class="fas fa-share-nodes"></i>
+                            </div>
+                            <div class="channel-text">
+                                <span data-i18n="contact.social_label">حساباتنا الرسمية على السوشيال ميديا:</span>
+                                <div style="display: flex; gap: 0.6rem; margin-top: 0.4rem;">
+                                    <a href="https://www.facebook.com/share/1HetpkcfHi/" target="_blank" class="social-icon-btn fb" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/ruya_r7777?cplk=MW1wZHk4aWI4Z242cw==" target="_blank" class="social-icon-btn ig" title="انستجرام"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.tiktok.com/@ruya_9537?_r=1&_t=ZS-9BGEUTGg6dQ" target="_blank" class="social-icon-btn tt" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form -->
+                <div class="form-box">
+                    <h3 class="form-title" data-i18n="form.title">طلب استشارة وعرض سعر مجاني</h3>
+                    <p class="form-subtitle" data-i18n="form.sub">املأ النموذج وسيصل طلبك مباشرة إلى إدارة التسويق وسنعاود الاتصال بك خلال ساعتين فقط.</p>
+
+                    <form id="lead-form" data-ajax-form>
+                        <div class="form-group-grid">
+                            <div class="form-group">
+                                <label for="name" data-i18n="form.name">الاسم الكامل *</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="أدخل اسمك الكريم" data-i18n-placeholder="form.name_ph" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-i18n="form.phone">رقم الهاتف / الواتساب *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="مثال: 01558054551" data-i18n-placeholder="form.phone_ph" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group-grid">
+                            <div class="form-group">
+                                <label for="email" data-i18n="form.email">البريد الإلكتروني *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="بريدك الإلكتروني للتواصل" data-i18n-placeholder="form.email_ph" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service" data-i18n="form.service">الخدمة المطلوبة *</label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="" disabled selected data-i18n="form.service_select">اختر الخدمة المطلوبة</option>
+                                    <option value="الحملات الإعلانية الممولة (Paid Ads)">إدارة الحملات الإعلانية الممولة (Paid Ads)</option>
+                                    <option value="إدارة السوشيال ميديا وصناعة المحتوى">إدارة السوشيال ميديا وصناعة المحتوى</option>
+                                    <option value="باقة التسويق المتكاملة (Growth)">باقة التسويق المتكاملة (Growth)</option>
+                                    <option value="تصميم متجر أو موقع إلكتروني">تصميم وتطوير متجر أو موقع إلكتروني</option>
+                                    <option value="بناء وتصميم هوية بصرية كاملة">بناء وتصميم هوية بصرية كاملة</option>
+                                    <option value="إنتاج فيديو وموشن جرافيك إعلاني">إنتاج فيديو وموشن جرافيك إعلاني</option>
+                                    <option value="تحسين محركات البحث SEO">تحسين محركات البحث (SEO)</option>
+                                    <option value="استشارة تسويقية عامة">استشارة تسويقية عامة لمشروعي</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget" data-i18n="form.budget">الميزانية الإعلانية التقريبية المتوقعة</label>
+                            <select id="budget" name="budget" class="form-control">
+                                <option value="أقل من 5,000 جنيه / 300 دولار">أقل من 5,000 جنيه (أو ما يعادلها)</option>
+                                <option value="من 5,000 إلى 15,000 جنيه">من 5,000 إلى 15,000 جنيه</option>
+                                <option value="من 15,000 إلى 35,000 جنيه">من 15,000 إلى 35,000 جنيه</option>
+                                <option value="أكثر من 35,000 جنيه (شركات كبرى)">أكثر من 35,000 جنيه (ميزانية توسعية)</option>
+                                <option value="غير محددة حالياً">أحتاج لمساعدتكم في تحديدها</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-i18n="form.msg">تفاصيل المشروع أو التحدي التسويقي *</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="اكتب نبذة عن مشروعك، ما هي أهدافك الحالية وما الصعوبات التي تواجهها؟" data-i18n-placeholder="form.msg_ph" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.1rem;">
+                            <span data-i18n="form.submit">إرسال الطلب الآن مجاناً</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <!-- Brand Col -->
+            <div class="footer-brand">
+                <a href="#home" class="brand-logo-link" title="رؤية | Ruya Marketing">
+                    <img src="assets/images/logo.png" alt="شعار Ruya" class="brand-logo-img">
+                </a>
+                <p data-i18n="footer.desc">
+                    شركة <strong>رؤية (Ruya)</strong> للتسويق الإلكتروني وإدارة الحملات الرقمية. نبتكر وننفذ استراتيجيات تسويقية حديثة ترفع مبيعات علامتك التجارية وتضعك في الصدارة.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/1HetpkcfHi/" target="_blank" rel="noopener noreferrer" class="social-icon-btn fb" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ruya_r7777?cplk=MW1wZHk4aWI4Z242cw==" target="_blank" rel="noopener noreferrer" class="social-icon-btn ig" title="انستجرام"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@ruya_9537?_r=1&_t=ZS-9BGEUTGg6dQ" target="_blank" rel="noopener noreferrer" class="social-icon-btn tt" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:ruya76199@gmail.com" class="social-icon-btn email" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4 data-i18n="footer.quick">روابط سريعة</h4>
+                <ul class="footer-links">
+                    <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="#about" data-i18n="nav.about">عن شركة رؤية</a></li>
+                    <li><a href="#services" data-i18n="nav.services">خدماتنا التسويقية</a></li>
+                    <li><a href="#pricing" data-i18n="nav.pricing">الباقات والأسعار</a></li>
+                    <li><a href="#portfolio" data-i18n="nav.portfolio">معرض الأعمال</a></li>
+                    <li><a href="#testimonials" data-i18n="nav.testimonials">آراء العملاء</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Links -->
+            <div class="footer-col">
+                <h4 data-i18n="footer.serv_title">خدماتنا المميزة</h4>
+                <ul class="footer-links">
+                    <li><a href="#services" data-i18n="services.s1_title">إعلانات Meta &amp; TikTok</a></li>
+                    <li><a href="#services" data-i18n="services.s2_title">إدارة حسابات السوشيال ميديا</a></li>
+                    <li><a href="#services" data-i18n="services.s4_title">تصميم المواقع والمتاجر</a></li>
+                    <li><a href="#services" data-i18n="services.s5_title">تصميم الهوية البصرية واللوجو</a></li>
+                    <li><a href="#services" data-i18n="services.s6_title">إنتاج الموشن جرافيك الإعلاني</a></li>
+                    <li><a href="#services" data-i18n="services.s3_title">تحسين محركات البحث SEO</a></li>
+                </ul>
+            </div>
+
+            <!-- Direct Contact -->
+            <div class="footer-col">
+                <h4 data-i18n="footer.contact_title">معلومات التواصل</h4>
+                <div class="footer-contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <span data-i18n="footer.wa">الواتساب الرسمي:</span><br>
+                        <a href="https://wa.me/201558054551" target="_blank" dir="ltr">+20 155 805 4551</a>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span data-i18n="footer.mail">البريد الإلكتروني:</span><br>
+                        <a href="mailto:ruya76199@gmail.com">ruya76199@gmail.com</a>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span data-i18n="footer.hours">ساعات العمل:</span><br>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="footer.hours_val">السبت - الخميس (9:00 ص - 9:00 م)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p data-i18n="footer.copy">جميع الحقوق محفوظة &copy; 2026 شركة رؤية (Ruya) للتسويق الإلكتروني. تم التصميم والتطوير بأعلى معايير الإتقان.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/201558054551?text=مرحباً%20شركة%20رؤية%20للتسويق،%20أود%20الاستفسار%20عن%20خدماتكم" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" title="تحدث معنا فوراً عبر واتساب">
+        <span class="wa-pulse"></span>
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scroll-top" title="الرجوع للأعلى">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification Element -->
+    <div id="toast" class="toast">
+        <i class="fas fa-circle-check"></i>
+        <span id="toast-message">تم استلام طلبك بنجاح!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/background-animation.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

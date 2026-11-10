@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+        <defs>
+          <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0a0c20" />
+            <stop offset="100%" stop-color="#181738" />
+          </linearGradient>
+          <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2534C8" />
+            <stop offset="50%" stop-color="#FF5CA8" />
+            <stop offset="100%" stop-color="#FFB703" />
+          </linearGradient>
+        </defs>
+        <rect width="600" height="380" fill="url(#bg6)" />
+        <circle cx="300" cy="180" r="160" fill="#FF5CA8" opacity="0.1" />
+
+        <!-- Design System Showcase Canvas -->
+        <g transform="translate(50, 40)">
+          <rect width="280" height="295" rx="16" fill="#0f1430" stroke="rgba(255, 92, 168, 0.3)" stroke-width="1.5" />
+          
+          <!-- Logo Construction Grid -->
+          <circle cx="140" cy="90" r="50" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4,4" />
+          <circle cx="140" cy="90" r="32" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4,4" />
+          
+          <!-- Abstract Modern Mark -->
+          <path d="M 120,65 L 160,65 L 170,95 L 140,115 L 110,95 Z" fill="url(#brandGrad)" />
+          <text x="140" y="145" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle" letter-spacing="1">NEXUS CORP</text>
+          <text x="140" y="160" fill="#FFB703" font-family="sans-serif" font-size="8.5" text-anchor="middle" letter-spacing="2">GLOBAL CONSULTING</text>
+
+          <!-- Typography Specs -->
+          <g transform="translate(30, 185)">
+            <text x="0" y="15" fill="#CBD5E1" font-family="sans-serif" font-size="9" font-weight="bold">Typography: Cairo &amp; Plus Jakarta</text>
+            <rect x="0" y="24" width="220" height="6" rx="3" fill="rgba(255,255,255,0.2)" />
+            <rect x="0" y="36" width="170" height="5" rx="2.5" fill="rgba(255,255,255,0.12)" />
+            <rect x="0" y="47" width="190" height="5" rx="2.5" fill="rgba(255,255,255,0.12)" />
+          </g>
+
+          <!-- Color Tokens -->
+          <g transform="translate(30, 250)">
+            <circle cx="12" cy="12" r="10" fill="#2534C8" />
+            <circle cx="42" cy="12" r="10" fill="#FF5CA8" />
+            <circle cx="72" cy="12" r="10" fill="#FFB703" />
+            <circle cx="102" cy="12" r="10" fill="#0F172A" stroke="rgba(255,255,255,0.3)" />
+            <text x="125" y="16" fill="#8E9BAE" font-family="sans-serif" font-size="9">Brand System 2.0</text>
+          </g>
+        </g>
+
+        <!-- Right Side Mockup Cards -->
+        <g transform="translate(355, 55)">
+          <rect width="195" height="110" rx="14" fill="rgba(16, 22, 48, 0.85)" stroke="rgba(255, 183, 3, 0.4)" stroke-width="1.5" />
+          <text x="20" y="32" fill="#8E9BAE" font-family="sans-serif" font-size="11">Course Inquiries Growth</text>
+          <text x="20" y="70" fill="#FFB703" font-family="sans-serif" font-size="30" font-weight="bold">+210%</text>
+          <text x="20" y="92" fill="#25D366" font-family="sans-serif" font-size="10">✓ Premium Market Perception</text>
+        </g>
+
+        <g transform="translate(355, 185)">
+          <rect width="195" height="135" rx="14" fill="rgba(16, 22, 48, 0.85)" stroke="rgba(37, 52, 200, 0.5)" stroke-width="1.5" />
+          <text x="20" y="32" fill="#8E9BAE" font-family="sans-serif" font-size="11">Stationery &amp; Assets</text>
+          <rect x="20" y="48" width="155" height="24" rx="6" fill="rgba(255,255,255,0.06)" />
+          <text x="30" y="64" fill="#FFFFFF" font-family="sans-serif" font-size="9">📁 Letterhead &amp; Envelopes</text>
+          <rect x="20" y="80" width="155" height="24" rx="6" fill="rgba(255,255,255,0.06)" />
+          <text x="30" y="96" fill="#FFFFFF" font-family="sans-serif" font-size="9">💼 Pitch Deck &amp; Social Kit</text>
+        </g>
+      </svg>

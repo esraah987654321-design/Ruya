@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+        <defs>
+          <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0b0f24" />
+            <stop offset="100%" stop-color="#241332" />
+          </linearGradient>
+          <linearGradient id="pGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FF5CA8" />
+            <stop offset="100%" stop-color="#7928CA" />
+          </linearGradient>
+        </defs>
+        <rect width="600" height="380" fill="url(#bg3)" />
+        <circle cx="200" cy="120" r="140" fill="#FF5CA8" opacity="0.18" />
+
+        <!-- Browser / Tablet Window Frame -->
+        <g transform="translate(50, 35)">
+          <rect width="320" height="305" rx="14" fill="#0d122b" stroke="rgba(255, 92, 168, 0.35)" stroke-width="1.5" />
+          
+          <!-- Browser Top Bar -->
+          <rect width="320" height="32" rx="14" fill="#141b3d" />
+          <circle cx="20" cy="16" r="4.5" fill="#FF5F56" />
+          <circle cx="35" cy="16" r="4.5" fill="#FFBD2E" />
+          <circle cx="50" cy="16" r="4.5" fill="#27C93F" />
+          <rect x="75" y="8" width="170" height="16" rx="8" fill="rgba(255,255,255,0.08)" />
+          <text x="160" y="20" fill="#8E9BAE" font-family="sans-serif" font-size="9" text-anchor="middle">store.ruya-glow.com</text>
+
+          <!-- Store Banner -->
+          <rect x="15" y="44" width="290" height="90" rx="10" fill="url(#pGrad)" />
+          <text x="35" y="78" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="900">NATURAL GLOW</text>
+          <text x="35" y="96" fill="#FFD1E8" font-family="sans-serif" font-size="10.5">Organic Skin Care &amp; Serums</text>
+          <rect x="35" y="106" width="80" height="20" rx="10" fill="#FFFFFF" />
+          <text x="75" y="120" fill="#7928CA" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">SHOP NOW</text>
+
+          <!-- Product Grid -->
+          <g transform="translate(15, 146)">
+            <!-- Product 1 -->
+            <rect x="0" y="0" width="138" height="142" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" />
+            <rect x="14" y="12" width="110" height="65" rx="8" fill="#18214d" />
+            <circle cx="69" cy="44" r="20" fill="#FF5CA8" opacity="0.6" />
+            <text x="15" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="10.5" font-weight="bold">Hydra Serum 30ml</text>
+            <text x="15" y="112" fill="#FFB703" font-family="sans-serif" font-size="10" font-weight="bold">$38.00</text>
+            <rect x="85" y="100" width="40" height="20" rx="5" fill="#2534C8" />
+            <text x="105" y="114" fill="#fff" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">+ Add</text>
+
+            <!-- Product 2 -->
+            <rect x="152" y="0" width="138" height="142" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" />
+            <rect x="166" y="12" width="110" height="65" rx="8" fill="#18214d" />
+            <circle cx="221" cy="44" r="20" fill="#FFB703" opacity="0.6" />
+            <text x="167" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="10.5" font-weight="bold">Night Repair Cream</text>
+            <text x="167" y="112" fill="#FFB703" font-family="sans-serif" font-size="10" font-weight="bold">$45.00</text>
+            <rect x="237" y="100" width="40" height="20" rx="5" fill="#2534C8" />
+            <text x="257" y="114" fill="#fff" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">+ Add</text>
+          </g>
+        </g>
+
+        <!-- Right Side Performance Metrics -->
+        <g transform="translate(390, 60)">
+          <!-- Conversion Card -->
+          <rect width="165" height="105" rx="14" fill="rgba(16, 22, 48, 0.85)" stroke="rgba(37, 211, 102, 0.5)" stroke-width="1.5" />
+          <text x="20" y="32" fill="#8E9BAE" font-family="sans-serif" font-size="11">Conversion Rate</text>
+          <text x="20" y="68" fill="#25D366" font-family="sans-serif" font-size="30" font-weight="bold">+42%</text>
+          <text x="20" y="90" fill="#CBD5E1" font-family="sans-serif" font-size="10">High Converting Funnel</text>
+        </g>
+
+        <g transform="translate(390, 185)">
+          <!-- Speed Card -->
+          <rect width="165" height="105" rx="14" fill="rgba(16, 22, 48, 0.85)" stroke="rgba(255, 92, 168, 0.5)" stroke-width="1.5" />
+          <text x="20" y="32" fill="#8E9BAE" font-family="sans-serif" font-size="11">Loading Speed</text>
+          <text x="20" y="68" fill="#FFB703" font-family="sans-serif" font-size="30" font-weight="bold">0.8s</text>
+          <text x="20" y="90" fill="#CBD5E1" font-family="sans-serif" font-size="10">Ultra-Fast Checkout</text>
+        </g>
+      </svg>

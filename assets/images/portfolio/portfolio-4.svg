@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+        <defs>
+          <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#050711" />
+            <stop offset="100%" stop-color="#141a38" />
+          </linearGradient>
+          <linearGradient id="ttGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00f2fe" />
+            <stop offset="100%" stop-color="#fe0979" />
+          </linearGradient>
+        </defs>
+        <rect width="600" height="380" fill="url(#bg4)" />
+        <circle cx="180" cy="190" r="130" fill="#00f2fe" opacity="0.12" />
+
+        <!-- Mobile Phone Mockup -->
+        <g transform="translate(80, 25)">
+          <rect width="170" height="330" rx="26" fill="#000" stroke="rgba(255,255,255,0.3)" stroke-width="2.5" />
+          <rect x="5" y="5" width="160" height="320" rx="22" fill="#0d1430" />
+          
+          <!-- Dynamic Island / Speaker -->
+          <rect x="55" y="10" width="50" height="9" rx="4.5" fill="#000" />
+          
+          <!-- Video Scene Abstract -->
+          <circle cx="85" cy="130" r="40" fill="url(#ttGrad)" opacity="0.85" />
+          <polygon points="80,118 95,130 80,142" fill="#FFFFFF" />
+
+          <!-- TikTok UI Overlay Right -->
+          <g transform="translate(132, 100)">
+            <!-- Profile avatar -->
+            <circle cx="14" cy="14" r="11" fill="#FF5CA8" />
+            <text x="14" y="18" fill="#fff" font-family="sans-serif" font-size="9" text-anchor="middle">+</text>
+
+            <!-- Heart -->
+            <path d="M 14,48 C 8,42 0,50 14,64 C 28,50 20,42 14,48 Z" fill="#fe0979" />
+            <text x="14" y="73" fill="#fff" font-family="sans-serif" font-size="8" text-anchor="middle">184K</text>
+
+            <!-- Comment -->
+            <circle cx="14" cy="92" r="8" fill="rgba(255,255,255,0.8)" />
+            <text x="14" y="110" fill="#fff" font-family="sans-serif" font-size="8" text-anchor="middle">12.8K</text>
+
+            <!-- Share -->
+            <path d="M 8,125 L 20,125 L 14,118 Z" fill="#00f2fe" />
+            <text x="14" y="142" fill="#fff" font-family="sans-serif" font-size="8" text-anchor="middle">9.4K</text>
+          </g>
+
+          <!-- Bottom Caption -->
+          <text x="15" y="270" fill="#FFFFFF" font-family="sans-serif" font-size="9.5" font-weight="bold">@ruya_marketing</text>
+          <text x="15" y="284" fill="#CBD5E1" font-family="sans-serif" font-size="8">5 secrets to 10x your sales! 🔥</text>
+          <text x="15" y="298" fill="#00f2fe" font-family="sans-serif" font-size="7.5">#marketing #ecommerce #growth</text>
+        </g>
+
+        <!-- Analytics Cards Right Side -->
+        <g transform="translate(290, 45)">
+          <rect width="250" height="95" rx="14" fill="rgba(16, 22, 48, 0.85)" stroke="rgba(0, 242, 254, 0.4)" stroke-width="1.5" />
+          <text x="25" y="32" fill="#8E9BAE" font-family="sans-serif" font-size="11">Total Organic Views</text>
+          <text x="25" y="68" fill="#00f2fe" font-family="sans-serif" font-size="30" font-weight="bold">2.5M+</text>
+          <rect x="145" y="44" width="85" height="24" rx="12" fill="rgba(0, 242, 254, 0.15)" />
+          <text x="187" y="60" fill="#00f2fe" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">VIRAL REACH</text>
+          <text x="25" y="85" fill="#25D366" font-family="sans-serif" font-size="9.5">✓ 0$ Spent on Ads (Organic)</text>
+        </g>
+
+        <g transform="translate(290, 160)">
+          <rect width="250" height="95" rx="14" fill="rgba(16, 22, 48, 0.85)" stroke="rgba(254, 9, 121, 0.4)" stroke-width="1.5" />
+          <text x="25" y="32" fill="#8E9BAE" font-family="sans-serif" font-size="11">Followers Increase</text>
+          <text x="25" y="68" fill="#FF5CA8" font-family="sans-serif" font-size="30" font-weight="bold">+45,200</text>
+          <text x="25" y="85" fill="#CBD5E1" font-family="sans-serif" font-size="9.5">Targeted &amp; Engaged Audience</text>
+        </g>
+
+        <g transform="translate(290, 275)">
+          <rect width="250" height="42" rx="12" fill="rgba(255, 183, 3, 0.12)" stroke="#FFB703" stroke-width="1" />
+          <text x="125" y="26" fill="#FFB703" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">🏆 Top 1% TikTok Creator Studio</text>
+        </g>
+      </svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+        <defs>
+          <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#080c1d" />
+            <stop offset="100%" stop-color="#121a3e" />
+          </linearGradient>
+          <linearGradient id="gGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4285F4" />
+            <stop offset="100%" stop-color="#34A853" />
+          </linearGradient>
+        </defs>
+        <rect width="600" height="380" fill="url(#bg5)" />
+        <circle cx="450" cy="100" r="140" fill="#4285F4" opacity="0.15" />
+
+        <!-- Google Search Result Card Mockup -->
+        <g transform="translate(50, 40)">
+          <rect width="300" height="295" rx="14" fill="#0e1533" stroke="rgba(66, 133, 244, 0.4)" stroke-width="1.5" />
+          
+          <!-- Google Header -->
+          <text x="25" y="32" fill="#4285F4" font-family="sans-serif" font-size="16" font-weight="bold">Google</text>
+          <rect x="90" y="18" width="185" height="20" rx="10" fill="rgba(255,255,255,0.06)" />
+          <text x="105" y="32" fill="#CBD5E1" font-family="sans-serif" font-size="9.5">Luxury Villas in New Capital</text>
+
+          <!-- Sponsored Snippet -->
+          <rect x="25" y="55" width="250" height="110" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" />
+          <rect x="38" y="68" width="32" height="14" rx="4" fill="#34A853" />
+          <text x="54" y="78" fill="#fff" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">Ad</text>
+          <text x="76" y="78" fill="#8E9BAE" font-family="sans-serif" font-size="9">https://www.prime-estates.com</text>
+          <text x="38" y="102" fill="#4285F4" font-family="sans-serif" font-size="12" font-weight="bold">Luxury Villas &amp; Penthouses - 10% Down</text>
+          <text x="38" y="120" fill="#CBD5E1" font-family="sans-serif" font-size="9">Exclusive Compound • Private Pool • 8 Yrs Installments</text>
+          <text x="38" y="136" fill="#34A853" font-family="sans-serif" font-size="9" font-weight="bold">📞 Call Developer Directly • Book Free Tour</text>
+
+          <!-- Lead Form UI -->
+          <g transform="translate(25, 180)">
+            <rect width="250" height="95" rx="10" fill="#141d45" stroke="rgba(66, 133, 244, 0.3)" />
+            <text x="15" y="24" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">Instant VIP Lead Form</text>
+            <rect x="15" y="36" width="220" height="22" rx="5" fill="rgba(255,255,255,0.06)" />
+            <text x="25" y="51" fill="#8E9BAE" font-family="sans-serif" font-size="9">Full Name &amp; Phone Number</text>
+            <rect x="15" y="64" width="220" height="22" rx="5" fill="url(#gGrad)" />
+            <text x="125" y="79" fill="#fff" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">Receive Brochure &amp; Price List</text>
+          </g>
+        </g>
+
+        <!-- Right Side Stats -->
+        <g transform="translate(375, 50)">
+          <rect width="175" height="100" rx="14" fill="rgba(16, 22, 48, 0.85)" stroke="rgba(52, 168, 83, 0.4)" stroke-width="1.5" />
+          <text x="20" y="32" fill="#8E9BAE" font-family="sans-serif" font-size="11">Qualified Leads</text>
+          <text x="20" y="68" fill="#34A853" font-family="sans-serif" font-size="28" font-weight="bold">450+</text>
+          <text x="20" y="88" fill="#CBD5E1" font-family="sans-serif" font-size="9.5">High Intent Buyers</text>
+        </g>
+
+        <g transform="translate(375, 170)">
+          <rect width="175" height="100" rx="14" fill="rgba(16, 22, 48, 0.85)" stroke="rgba(255, 183, 3, 0.4)" stroke-width="1.5" />
+          <text x="20" y="32" fill="#8E9BAE" font-family="sans-serif" font-size="11">Cost Per Lead (CPL)</text>
+          <text x="20" y="68" fill="#FFB703" font-family="sans-serif" font-size="28" font-weight="bold">-35%</text>
+          <text x="20" y="88" fill="#CBD5E1" font-family="sans-serif" font-size="9.5">Optimized Google Funnel</text>
+        </g>
+
+        <g transform="translate(375, 290)">
+          <rect width="175" height="36" rx="10" fill="rgba(66, 133, 244, 0.15)" stroke="#4285F4" stroke-width="1" />
+          <text x="87" y="22" fill="#4285F4" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">Google Certified Partner</text>
+        </g>
+      </svg>
